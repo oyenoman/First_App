@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Response Page</title>
+</head>
+<body>
+<h1> This is live response page </h1>
+<a href="{% url 'result' %}"> Click here for result </a>
+
+<form action="{% url 'result' %}">
+
+    {% csrf_token %}
+    <textarea cols="100" rows="20" name="article"></textarea>
+    <br></br>
+    <input type="submit" value="Submit">
+
+</form>
+
+
+{{key1}}
+</body>
+</html>
